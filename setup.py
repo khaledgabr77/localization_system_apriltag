@@ -13,8 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')),
-        (os.path.join('share', package_name), glob('models/*.sdf*')),
-        (os.path.join('share', package_name), glob('worlds/*.model*')),
+        (os.path.join('share', package_name), glob('config/*.*')),
 
 
     ],
@@ -27,6 +26,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'static_tf_node = localization_system_april.static_tf:main',
+
         ],
     },
 )

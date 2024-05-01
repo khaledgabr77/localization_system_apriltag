@@ -1,8 +1,10 @@
-# The file will contain all tag positions in the environment: [x, y, z, Roll, Pitch, Yaw] (measured in meters and radians).
+# The file will contain all tag poses in the environment: [x, y, z, Roll, Pitch, Yaw] (measured in meters and radians).
+/static_tf_node:
 
-# Dictionary with tag poses
-tag_pose:
-  0: [-2.5, -2.489, 0.3, 1.5708, 0, 3.14159]
-  1: [-1.5, -2.489, 0.3, 1.5708, 0, 3.14159]
+  ros__parameters:
+    tag_pose:
+      0: [-2.5, -2.489, 0.3, 1.5708, 0, 3.14159]
+      1: [-1.5, -2.489, 0.3, 1.5708, 0, 3.14159]
 
-  
+
+
