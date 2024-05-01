@@ -1,6 +1,5 @@
 # The file will contain all tag poses in the environment: [x, y, z, Roll, Pitch, Yaw] (measured in meters and radians).
 /static_tf_node:
-
   ros__parameters:
     tag_pose:
       0: [-2.5, -2.489, 0.3, 1.5708, 0, 3.14159]
