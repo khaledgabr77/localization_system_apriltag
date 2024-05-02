@@ -13,17 +13,17 @@ def generate_launch_description():
     #     'tag_pose.yaml'
     # )
 
-    config = os.path.join(
-        get_package_share_directory('localization_system_april'),
-        'tag_pose.yaml'
-    )
+    # config = os.path.join(
+    #     get_package_share_directory('localization_system_april'),
+    #     'tag_pose.yaml'
+    # )
     
     tag_pose = Node(
         package='localization_system_april',
         executable='static_tf_node',
         name='static_tf_node',
         output='screen',
-        parameters=[config]
+        # parameters=[config]
     )
 
     ld.add_action(tag_pose)
